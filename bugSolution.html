@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    document.getElementById("myDiv").style.display = "none";
+    //Correct way to make the div visible again
+    document.getElementById("myDiv").style.display = "block";
+    document.getElementById("myDiv").innerHTML = "<p>This text should also be visible.</p>";
+  </script>
+</body>
+</html>
